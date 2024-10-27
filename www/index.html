@@ -66,5 +66,38 @@
     <script src="assets/vendore/texllate/jquery.lettering.js"></script>
     <script src="http://jschr.github.io/textillate/jquery.textillate.js"></script>
     <script src="main.js"></script>
+
+
+ <style>
+        /* Container for centering */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        /* Basic Text Styling */
+        .popping-text {
+            font-size: 2em;
+            font-weight: bold;
+            color: #3498db;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        /* Hover Effect for Popping Text */
+        .popping-text:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="popping-text">Hover over me!</span>
+    </div>
 </body>
 </html>
+
+
